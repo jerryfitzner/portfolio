@@ -30,6 +30,14 @@ function App() {
         >
           LinkedIn
         </a>
+        <a
+          className="App-link"
+          href="https://github.com/jerryfitzner"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
       </header>
     </div>
   );
