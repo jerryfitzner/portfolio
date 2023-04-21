@@ -1,10 +1,12 @@
 import logo from './Jerry.Fitzner2.png';
 import './App.css';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Navbar />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>
           Welcome!
@@ -38,7 +40,7 @@ function App() {
         >
           GitHub
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
