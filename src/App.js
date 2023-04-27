@@ -1,11 +1,15 @@
 import logo from './Jerry.Fitzner2.png';
 import './App.css';
 import Navbar from './Components/Navbar';
+import Profile from './Components/Profile';
+import Demo from './Demo';
 
 function App() {
   return (
     <div className="App">
+      <Demo />
       <Navbar />
+      {/* <Profile /> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>
