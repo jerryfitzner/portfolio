@@ -1,12 +1,38 @@
-import { Avatar, Box, Container, Typography } from "@mui/material";
+import { Avatar, Typography } from "@mui/material";
 import React from "react";
 import logo from '../Jerry.Fitzner2.png';
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
 const Profile = () => {
   return(
-    <Container>
-      <Box 
+    <Grid2 container spacing={3} minHeight={410}>
+      <Grid2 item xs={12} sm={5} display='flex' justifyContent='center' alignItems='center'>
+        <Avatar 
+          alt="Jerry Fitzner" 
+          src={logo}
+          sm={4}
+          sx={{
+            width: {
+              xs: 250,
+              sm: 350
+            },
+            height: {
+              xs: 250,
+              sm: 350
+            },
+          }}
+        />
+      </Grid2>
+      <Grid2 item xs={12} sm={7} display='flex' justifyContent='center' alignItems='center'>
+        <Typography>
+          I am a Software Developer
+        </Typography>
+      </Grid2>
+    </Grid2>
+
+    // <Container >
+    // <>
+      /* <Box 
         sx={{
           // display: 'flex'
           // display: {
@@ -15,32 +41,33 @@ const Profile = () => {
           // },
           // alignItems: 'center',
         }}
-      >
-        <Grid2 container spacing={2}>
-          <Grid2 xs={6} md={4}>
-        <Avatar 
-          alt="Jerry Fitzner" 
-          src={logo}
-          sx={{
-            // md: {6},
-            width: 400,
-            height: 400,
-            // justifyContent: 'Center',
-          }}
-        />
-        </Grid2>
-        <Grid2 xs={6} md={8}>
-        <Typography
-          sx={{
-            // md: {6},
-          }}
-        >
-          I am a Software Developer
-        </Typography>
-        </Grid2>
-        </Grid2>
-      </Box>    
-    </Container>
+      > */
+        
+        /* <Grid2 container spacing={3} justifycontent='center' alignItems='center' sx={{flexGrow: 1,  display: { xs: 'flex', sm: 'none' }}}>
+          <Grid2 xs={12} >
+            <Avatar 
+              alt="Jerry Fitzner" 
+              src={logo}
+              variant="soft"
+              sx={{
+                  width: 200,
+                  height: 200,
+              }}
+            />
+          </Grid2>
+          <Grid2 xs={12} >
+            <Typography
+              sx={{
+                // md: {6},
+              }}
+            >
+              I am a Software Developer
+            </Typography>
+          </Grid2>
+        </Grid2> */
+      /* </Box>     */
+    /* </Container> */
+    /* </> */
   )
 }
 
