@@ -35,7 +35,7 @@ export default function ProjectCard({proj}) {
     <Grid2 item xs={12} sm={6} display='flex' justifyContent='center' alignItems='center'>
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
-            sx={{ height: 140 }}
+            sx={{ height: 200 }}
             image={proj.image}
             title={proj.title}
           />
@@ -48,9 +48,9 @@ export default function ProjectCard({proj}) {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Video</Button>
-            <Button size="small">Demo</Button>
-            <Button size="small">Github</Button>
+            <Button size="small" href={proj.video}>Video</Button>
+            <Button size="small" href={proj.demo}>Demo</Button>
+            <Button size="small" href={proj.github1}>Github</Button>
             <ExpandMore
               expand={expanded}
               onClick={handleExpandClick}

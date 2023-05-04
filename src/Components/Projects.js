@@ -1,6 +1,8 @@
 import React from "react";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import ProjectCard from "./ProjectCard";
+import SFcoverimage from "../SF.coverimage.png";
+import ICAcoverimage from "../ICA.coverimage.png";
 
 
 
@@ -16,7 +18,7 @@ export default function Projects() {
 
 const projectData = [
   {
-    image: '',
+    image: `${ICAcoverimage}`,
     title: 'Incident Command App',
     description: 'An app that allows an emergency commander to keep track of emergency incidents, and resources allocated.',
     bullets: [
@@ -30,7 +32,7 @@ const projectData = [
     github1: 'https://github.com/jerryfitzner/incident-command',
     github2: ''
   },{
-    image: '',
+    image: `${SFcoverimage}`,
     title: 'Student Fundraising App',
     description: 'An app that allows a youth leader/teacher to keep track of the fundraising efforts of their students and donors.',
     bullets: [
