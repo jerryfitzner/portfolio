@@ -12,9 +12,20 @@ import Button from '@mui/material/Button';
 // import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Logo from '../Logo.png';
+import { LinkedinIcon, GitHubIcon, BookIcon } from '@mui/icons-material';
 // import { Grid } from '@mui/material';
 
-const pages = ['Resume', 'Contact', 'Projects', 'Me'];
+// const links = [{
+//     title: "LinkedIn",
+//     icon: 'LinkedinIcon'
+//   },{
+//     title: "GitHub",
+//     icon: 'GitHubIcon'
+//   },{
+//     title: "Blog",
+//     icon: 'BookIcon'
+//   }];
+// const pages = ['Resume', 'Contact', 'Projects', 'Me'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -86,11 +97,12 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {/* {links.map((link) => (
+                <MenuItem key={link.title} onClick={handleCloseNavMenu}>
+                  <{link.icon} />
+                  <Typography textAlign="center">{link.title}</Typography>
                 </MenuItem>
-              ))}
+              ))} */}
             </Menu>
           </Box>
 
