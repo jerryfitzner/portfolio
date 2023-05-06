@@ -12,18 +12,18 @@ import Button from '@mui/material/Button';
 // import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Logo from '../Logo.png';
-import { LinkedinIcon, GitHubIcon, BookIcon } from '@mui/icons-material';
+// import { Linkedin, GitHub, Book } from '@mui/icons-material';
 // import { Grid } from '@mui/material';
 
 // const links = [{
 //     title: "LinkedIn",
-//     icon: 'LinkedinIcon'
+//     icon: <Linkedin />
 //   },{
 //     title: "GitHub",
-//     icon: 'GitHubIcon'
+//     icon: <GitHub />
 //   },{
 //     title: "Blog",
-//     icon: 'BookIcon'
+//     icon: <Book />
 //   }];
 // const pages = ['Resume', 'Contact', 'Projects', 'Me'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -97,25 +97,25 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {/* {links.map((link) => (
-                <MenuItem key={link.title} onClick={handleCloseNavMenu}>
-                  <{link.icon} />
-                  <Typography textAlign="center">{link.title}</Typography>
-                </MenuItem>
-              ))} */}
+              {/* {links.map((link) => ( */}
+                // <MenuItem key={link.title} onClick={handleCloseNavMenu}>
+                  {/* {link.icon} */}
+                  {/* <Typography textAlign="center">{link.title}</Typography> */}
+                {/* </MenuItem> */}
+              // ))}
             </Menu>
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, flexDirection: 'row-reverse', paddingRight: 4,  }}>
-            {pages.map((page) => (
+            {/* {links.map((link) => (
               <Button
-                key={page}
+                key={link}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: '#229EC3', display: 'block' }}
               >
-                {page}
+                {link.title}
               </Button>
-            ))}
+            ))} */}
           </Box>
 
           {/* <Box sx={{ flexGrow: 0 }}>
