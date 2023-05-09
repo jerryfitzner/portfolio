@@ -7,16 +7,14 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-// import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-// import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Logo from '../Logo.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import BookIcon from '@mui/icons-material/Book';
-import { Navigate } from 'react-router-dom';
-// import { Grid } from '@mui/material';
+
+
 
 const links = [{
     title: "LinkedIn",
@@ -34,25 +32,13 @@ const links = [{
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  // const handleOpenUserMenu = (event) => {
-  //   setAnchorElUser(event.currentTarget);
-  // };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  // const handleCloseUserMenu = () => {
-  //   setAnchorElUser(null);
-  // };
-
-  const redirectUrl = (url) => {
-    return (<Navigate to='https://www.google.com' />); 
   };
 
   return (
@@ -79,7 +65,6 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, flexDirection: 'row-reverse' }}>
             <IconButton
               size="large"
-              // justifycontent="flex-end"
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
@@ -121,7 +106,6 @@ function ResponsiveAppBar() {
             {links.map((link, index) => (
               <a href={link.url} key={index}> 
               <Button
-                // key={link.title}
                 sx={{ my: 2, color: '#229EC3', display: 'block' }}
               >
                 {link.icon}{link.title}
