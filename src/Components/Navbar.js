@@ -15,7 +15,7 @@ import Logo from '../Logo.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import BookIcon from '@mui/icons-material/Book';
-import { redirect } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 // import { Grid } from '@mui/material';
 
 const links = [{
@@ -52,7 +52,7 @@ function ResponsiveAppBar() {
   // };
 
   const redirectUrl = (url) => {
-    return redirect('www.google.com'); 
+    return (<Navigate to='https://www.google.com' />); 
   };
 
   return (
@@ -106,24 +106,27 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {links.map((link) => ( 
-                <MenuItem key={link.title} onClick={handleCloseNavMenu}>
+              {links.map((link, index) => ( 
+                <a href={link.url} key={index}>
+                <MenuItem onClick={handleCloseNavMenu}>
                   {link.icon} 
                   <Typography textAlign="center">{link.title}</Typography>
                 </MenuItem>
+                </a>
               ))} 
             </Menu>
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, flexDirection: 'row-reverse', paddingRight: 4,  }}>
-            {links.map((link) => (
+            {links.map((link, index) => (
+              <a href={link.url} key={index}> 
               <Button
-                key={link.title}
-                onClick={redirectUrl(link.url)}
+                // key={link.title}
                 sx={{ my: 2, color: '#229EC3', display: 'block' }}
               >
                 {link.icon}{link.title}
               </Button>
+              </a>
             ))}
           </Box>
         </Toolbar>

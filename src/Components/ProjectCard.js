@@ -62,8 +62,8 @@ export default function ProjectCard({proj}) {
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
-              {proj.bullets.map((bullet) => (
-                <Typography variant="body2" color="text.secondary">
+              {proj.bullets.map((bullet, index) => (
+                <Typography key={index} variant="body2" color="text.secondary">
                   - {bullet}
                 </Typography>
               ))}
