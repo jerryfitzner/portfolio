@@ -6,6 +6,7 @@ import Profile from './Components/Profile';
 import { Container } from '@mui/material';
 import ResponsiveAppBar from './Components/Navbar';
 import Projects from './Components/Projects';
+import ContactForm from './Components/ContactForm';
 
 
 
@@ -20,6 +21,7 @@ function App() {
       {/* <Navbar /> */}
         <Profile /> 
         <Projects />
+        <ContactForm />
       </Container>
     </div>
   );
