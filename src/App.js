@@ -7,6 +7,7 @@ import { Container } from '@mui/material';
 import ResponsiveAppBar from './Components/Navbar';
 import Projects from './Components/Projects';
 import ContactForm from './Components/ContactForm';
+import CodeIcons from './Components/CodeIcons';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         {/* <Demo /> */}
       {/* <Navbar /> */}
         <Profile /> 
+        <CodeIcons />
         <Projects />
         <ContactForm />
       </Container>
