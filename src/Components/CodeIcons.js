@@ -8,107 +8,112 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import { Avatar } from '@mui/material';
 
 export default function CodeIcons() {
-  console.log({CSS})
   return(
     <Grid2 container spacing={3} minHeight={410}>
-      <Grid2 item xs={12} sm={2} display='flex' justifyContent='center' alignItems='center'>
+      <Grid2 item xs={4} sm={2} display='flex' justifyContent='center' alignItems='center'>
         <Avatar 
           alt="Jerry Fitzner" 
           src={CSS}
           sm={4}
+          variant="rounded"
           sx={{
             width: {
-              xs: 250,
-              sm: 350
+              xs: 75,
+              sm: 100
             },
             height: {
-              xs: 250,
-              sm: 350
+              xs: 75,
+              sm: 100
             },
           }}
         />
       </Grid2>
-      <Grid2 item xs={12} sm={2} display='flex' justifyContent='center' alignItems='center'>
+      <Grid2 item xs={4} sm={2} display='flex' justifyContent='center' alignItems='center'>
         <Avatar 
           alt="Jerry Fitzner" 
           src={HTML}
           sm={4}
+          variant="rounded"
           sx={{
             width: {
-              xs: 250,
-              sm: 350
+              xs: 75,
+              sm: 100
             },
             height: {
-              xs: 250,
-              sm: 350
+              xs: 75,
+              sm: 100
             },
           }}
         />
       </Grid2>
-      <Grid2 item xs={12} sm={2} display='flex' justifyContent='center' alignItems='center'>
+      <Grid2 item xs={4} sm={2} display='flex' justifyContent='center' alignItems='center'>
         <Avatar 
           alt="Jerry Fitzner" 
           src={JSCRIPT}
           sm={4}
+          variant="rounded"
           sx={{
             width: {
-              xs: 250,
-              sm: 350
+              xs: 75,
+              sm: 100
             },
             height: {
-              xs: 250,
-              sm: 350
+              xs: 75,
+              sm: 100
             },
           }}
         />
       </Grid2>
-      <Grid2 item xs={12} sm={2} display='flex' justifyContent='center' alignItems='center'>
+      <Grid2 item xs={4} sm={2} display='flex' justifyContent='center' alignItems='center'>
         <Avatar 
           alt="Jerry Fitzner" 
           src={RAILS}
           sm={4}
+          variant="rounded"
           sx={{
             width: {
-              xs: 250,
-              sm: 350
+              xs: 75,
+              sm: 100
             },
             height: {
-              xs: 250,
-              sm: 350
+              xs: 75,
+              sm: 100
             },
           }}
         />
       </Grid2>
-      <Grid2 item xs={12} sm={2} display='flex' justifyContent='center' alignItems='center'>
+      <Grid2 item xs={4} sm={2} display='flex' justifyContent='center' alignItems='center'>
         <Avatar 
           alt="Jerry Fitzner" 
           src={REACTLOGO}
           sm={4}
+          variant="rounded"
           sx={{
             width: {
-              xs: 250,
-              sm: 350
+              xs: 75,
+              sm: 100
             },
             height: {
-              xs: 250,
-              sm: 350
+              xs: 75,
+              sm: 100
             },
           }}
         />
       </Grid2>
-      <Grid2 item xs={12} sm={2} display='flex' justifyContent='center' alignItems='center'>
+      <Grid2 item xs={4} sm={2} display='flex' justifyContent='center' alignItems='center'>
         <Avatar 
           alt="Jerry Fitzner" 
           src={RUBY}
           sm={4}
+          variant="rounded"
           sx={{
             width: {
-              xs: 250,
-              sm: 350
+              xs: 75,
+              sm: 100
             },
             height: {
-              xs: 250,
-              sm: 350
+              xs: 75,
+              sm: 100
             },
           }}
         />
