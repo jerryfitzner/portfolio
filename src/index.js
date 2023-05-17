@@ -4,13 +4,20 @@ import './index.css';
 import App from './App';
 import TempApp from './TempApp';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TempApp />
-    {/* <App /> */}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={ <TempApp /> } />
+        <Route path="/newportfolio" element={ <App /> } />
+        <Route path="*" element={ <TempApp /> } />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
