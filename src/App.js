@@ -18,8 +18,6 @@ function App() {
     <div className="App">
       <ResponsiveAppBar />
       <Container sx={{marginY: 5}}>
-        {/* <Demo /> */}
-      {/* <Navbar /> */}
         <Profile /> 
         <CodeIcons />
         <Projects />

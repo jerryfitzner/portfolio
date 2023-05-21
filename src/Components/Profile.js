@@ -25,7 +25,7 @@ const Profile = () => {
       </Grid2>
       <Grid2 item xs={12} sm={7} display='flex' justifyContent='center' alignItems='center'>
         <Typography>
-          I am a Software Developer
+          Software engineer experienced in Ruby on Rails, React, and JavaScript based programming. With a background in technical problem-solving, I collaborate well on a team, communicate clearly, and remain calm in chaotic situations. I learn from failure, thrive on feedback, and am self-driven. My love of software development stems from the challenges it brings to create accessible and easy to use software for all.
         </Typography>
       </Grid2>
     </Grid2>
