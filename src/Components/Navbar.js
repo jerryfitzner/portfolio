@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import Logo from '../Logo.png';
+import Logo from '../Logo2.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import BookIcon from '@mui/icons-material/Book';
@@ -44,7 +44,7 @@ function ResponsiveAppBar() {
   return (
     <AppBar position="static"
      sx={{
-      backgroundColor: 'white',
+      backgroundColor: '#152448',
       paddingLeft: 4,
      }}
     >
@@ -71,7 +71,11 @@ function ResponsiveAppBar() {
               onClick={handleOpenNavMenu}
               color="#229EC3"
             >
-              <MenuIcon />
+              <MenuIcon 
+                sx={{
+                  color: '#229EC3',
+                }}
+              />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -92,8 +96,16 @@ function ResponsiveAppBar() {
               }}
             >
               {links.map((link, index) => ( 
-                <a href={link.url} key={index}>
-                <MenuItem onClick={handleCloseNavMenu}>
+                <a 
+                href={link.url} 
+                key={index}
+                >
+                <MenuItem onClick={handleCloseNavMenu} 
+                sx={{
+                  color: '#229EC3',
+                  backgroundColor: '#152448',
+                }}
+                >
                   {link.icon} 
                   <Typography textAlign="center">{link.title}</Typography>
                 </MenuItem>

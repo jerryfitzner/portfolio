@@ -11,11 +11,9 @@ import CodeIcons from './Components/CodeIcons';
 
 
 
-
-
 function App() {
   return (
-    <div className="App">
+    <div className="Background">
       <ResponsiveAppBar />
       <Container sx={{marginY: 5}}>
         <Profile /> 
