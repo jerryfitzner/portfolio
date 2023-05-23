@@ -42,7 +42,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static"
+    <AppBar position="fixed"
      sx={{
       backgroundColor: '#152448',
       paddingLeft: 4,

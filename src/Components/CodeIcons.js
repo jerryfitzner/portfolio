@@ -9,7 +9,7 @@ import { Avatar } from '@mui/material';
 
 export default function CodeIcons() {
   return(
-    <Grid2 container spacing={3} minHeight={410}>
+    <Grid2 container spacing={3} minHeight={410} paddingTop={5}>
       <Grid2 item xs={4} sm={2} display='flex' justifyContent='center' alignItems='center'>
         <Avatar 
           alt="Jerry Fitzner" 

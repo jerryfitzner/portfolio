@@ -5,7 +5,7 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
 const Profile = () => {
   return(
-    <Grid2 container spacing={3} minHeight={410}>
+    <Grid2 container spacing={3} minHeight={410} paddingTop={20}>
       <Grid2 item xs={12} sm={5} display='flex' justifyContent='center' alignItems='center'>
         <Avatar 
           alt="Jerry Fitzner" 

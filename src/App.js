@@ -19,7 +19,7 @@ function App() {
         <Profile /> 
         <CodeIcons />
         <Projects />
-        <ContactForm />
+        {/* <ContactForm /> */}
       </Container>
     </div>
   );

@@ -33,7 +33,11 @@ export default function ProjectCard({proj}) {
   
   return(
     <Grid2 item xs={12} sm={6} display='flex' justifyContent='center' alignItems='center'>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ 
+          maxWidth: 345, 
+          backgroundColor: '#152448',
+          color: '#0399C0',
+          }}>
           <CardMedia
             sx={{ height: 200 }}
             image={proj.image}
@@ -43,27 +47,28 @@ export default function ProjectCard({proj}) {
             <Typography gutterBottom variant="h5" component="div">
               {proj.title}
             </Typography>
-            <Typography variant="body2" color="text.secondary" sx={{fontStyle: 'italic'}}>
+            <Typography variant="body2" color="#0399C0" sx={{fontStyle: 'italic'}}>
                 {proj.description}
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" href={proj.video}>Video</Button>
-            <Button size="small" href={proj.demo}>Demo</Button>
-            <Button size="small" href={proj.github1}>Github</Button>
+            <Button size="small" href={proj.video} sx={{color: '#0399C0',}}>Video</Button>
+            <Button size="small" href={proj.demo} sx={{color: '#0399C0',}}>Demo</Button>
+            <Button size="small" href={proj.github1} sx={{color: '#0399C0',}}>Github</Button>
             <ExpandMore
               expand={expanded}
               onClick={handleExpandClick}
               aria-expanded={expanded}
               aria-label="show more"
+              
             >
-              <ExpandMoreIcon />
+              <ExpandMoreIcon sx={{color: '#0399C0',}}/>
             </ExpandMore>
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
               {proj.bullets.map((bullet, index) => (
-                <Typography key={index} variant="body2" color="text.secondary">
+                <Typography key={index} variant="body2" color="#0399C0">
                   - {bullet}
                 </Typography>
               ))}

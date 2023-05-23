@@ -8,7 +8,7 @@ import ICAcoverimage from "../ICA.coverimage.png";
 
 export default function Projects() {
   return(
-    <Grid2 container spacing={3} minHeight={410}>
+    <Grid2 container spacing={3} minHeight={410} paddingTop={5} paddingBottom={20}>
       {projectData.map((proj, index) => (
         <ProjectCard key={index} proj={proj} />
       ))}
