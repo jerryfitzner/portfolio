@@ -13,9 +13,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={ <TempApp /> } />
+        <Route path="/" element={ <App /> } />
         <Route path="/newportfolio" element={ <App /> } />
-        <Route path="*" element={ <TempApp /> } />
+        <Route path="*" element={ <App /> } />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
