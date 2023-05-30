@@ -11,6 +11,7 @@ import Collapse from '@mui/material/Collapse';
 import { styled } from '@mui/material/styles';
 
 import IconButton from '@mui/material/IconButton';
+import { CardActionArea } from "@mui/material";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -37,7 +38,10 @@ export default function ProjectCard({proj}) {
           maxWidth: 345, 
           backgroundColor: '#152448',
           color: '#0399C0',
-          }}>
+          }}
+          variant="outlined"
+          >
+          <CardActionArea>
           <CardMedia
             sx={{ height: 200 }}
             image={proj.image}
@@ -74,6 +78,7 @@ export default function ProjectCard({proj}) {
               ))}
             </CardContent>
           </Collapse>
+          </CardActionArea>  
         </Card>
       </Grid2>
   )
