@@ -38,10 +38,10 @@ export default function ProjectCard({proj}) {
           maxWidth: 345, 
           backgroundColor: '#152448',
           color: '#0399C0',
+          outlineStyle: 'groove',
           }}
-          variant="outlined"
           >
-          <CardActionArea>
+          {/* <CardActionArea> */}
           <CardMedia
             sx={{ height: 200 }}
             image={proj.image}
@@ -78,7 +78,7 @@ export default function ProjectCard({proj}) {
               ))}
             </CardContent>
           </Collapse>
-          </CardActionArea>  
+          {/* </CardActionArea>   */}
         </Card>
       </Grid2>
   )
