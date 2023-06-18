@@ -62,7 +62,7 @@ function ResponsiveAppBar() {
           
 
           
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, flexDirection: 'row-reverse' }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, flexDirection: 'row-reverse'}}>
             <IconButton
               size="large"
               aria-label="account of current user"
